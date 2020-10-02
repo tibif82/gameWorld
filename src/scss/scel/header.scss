@@ -1,0 +1,127 @@
+.header {
+   max-width: 100%;
+   max-height: 1130px;
+   // height: 100vh;
+   background-image: url(../img/header/bg-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: $color-1;
+   font-family: "MyriadPro";
+
+   &__block {
+      max-width: 666px;
+      height: auto;
+      padding: 114px 10px 64px 40px;
+   }
+
+   &__title {
+      font-size: 202px;
+      letter-spacing: -6.1px;
+      font-weight: bold;
+
+      @include animPositive-Y;
+   }
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+   }
+
+   &__info {
+      max-width: 390px;
+      padding-bottom: 30px;
+
+      @include animPositive-Y;
+   }
+
+   &__info._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+
+   &__title:first-letter,
+   &__info:first-letter {
+      color: $color-4;
+   }
+
+   &__info,
+   &__download {
+      font-size: 18px;
+      text-align: left;
+   }
+
+   &__download a {
+      color: $color-4;
+   }
+   &__download {
+      @include animPositive-Y;
+   }
+
+   &__download._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.8s;
+   }
+
+   &__wrapp {
+      max-width: 1198px;
+      height: auto;
+      background-image: url(../img/header/bg-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+
+   &__wrapp-cont {
+      padding: 70px 0 422px 40px;
+   }
+
+   &__subtitle {
+      font-size: 60px;
+      font-weight: bold;
+      max-width: 450px;
+      line-height: 0.8;
+      letter-spacing: -3px;
+      text-align: left;
+      padding-bottom: 60px;
+
+      @include animPositive-Y;
+   }
+   &__subtitle._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.8s;
+   }
+
+   &__subtitle-yellow {
+      color: $color-4;
+   }
+}
+.list {
+   display: flex;
+   @include animPositive-Y;
+}
+.list._active {
+   transform: translate(0px, 0px);
+   opacity: 1;
+   transition: all 0.8s ease 1.4s;
+}
+.container {
+   max-width: 1198px;
+   margin: 0 auto;
+}
+
+.item:not(:first-child) > .url-item {
+   margin-left: 30px;
+}
+
+.url-item {
+   color: $color-4;
+   font-size: 18px;
+
+   &:hover {
+      color: $color-1;
+      box-shadow: 0px 1px 0px 0px #ffc600;
+   }
+}

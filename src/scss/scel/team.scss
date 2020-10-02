@@ -1,0 +1,210 @@
+.team {
+   font-family: "MyriadPro";
+   background-color: $color-1;
+   padding-top: 85px;
+   padding-bottom: 149px;
+
+   @media (max-width: 769px) {
+      padding-top: 50px;
+      padding-bottom: 0px;
+   }
+   @media (max-width: 376px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+
+   &__wrapper {
+      padding: 20px;
+      display: flex;
+      @media (max-width: 1025px) {
+         display: inline-block;
+         text-align: center;
+      }
+   }
+
+   &__content {
+      @media (max-width: 415px) {
+         padding-bottom: 40px;
+      }
+      @media (max-width: 1024px) {
+         text-align: center;
+      }
+   }
+
+   // *******************
+   &__title {
+      width: 151px;
+      margin-top: 14px;
+      margin-right: 146px;
+      @include tlt;
+      @include animPositive-Y;
+
+      @media (max-width: 769px) {
+         margin-right: 0;
+         display: inherit;
+      }
+   }
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+   &__title:first-letter {
+      @include fLeter;
+   }
+   &__title:after {
+      @include grayline;
+      width: 84px;
+      margin: -6px 0px -6px 37px;
+      margin-top: 3px;
+   }
+   // *******************
+
+   &__inner {
+      @media (max-width: 1025px) {
+         text-align: left;
+      }
+   }
+   &__description {
+      max-width: 624px;
+      font-size: 14px;
+      color: $color-3;
+      padding-bottom: 35px;
+
+      @media (max-width: 769px) {
+         text-align: center;
+         max-width: 100%;
+      }
+      @media (max-width: 376px) {
+         text-align: center;
+         max-width: 100%;
+      }
+      @media (max-width: 414px) {
+         text-align: center;
+         max-width: 100%;
+      }
+      @media (max-width: 321px) {
+         text-align: left;
+         max-width: 100%;
+      }
+   }
+   &__bent {
+      @include pendent;
+      @include animPositive-X;
+   }
+   &__bent._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+   &__bent-txt {
+      @include animPositive-X;
+   }
+   &__bent-txt._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+
+   &__foto {
+      display: flex;
+      @media (max-width: 769px) {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+   &__foto-1,
+   &__foto-2,
+   &__foto-3,
+   &__foto-4 {
+      margin-right: 20px;
+   }
+
+   &__foto-1,
+   &__foto-2 {
+      @media (max-width: 415px) {
+         margin-right: 0px;
+         padding-bottom: 20px;
+      }
+   }
+   &__foto-1 {
+      @include animPositive-Y;
+      @media (max-width: 415px) {
+         margin-right: 5px;
+      }
+   }
+   &__foto-1._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+
+   &__foto-1,
+   &__foto-2,
+   &__foto-4,
+   &__foto-3 {
+      @media (max-width: 376px) {
+         margin-right: 0;
+         padding-bottom: 35px;
+      }
+   }
+
+   &__foto-1 img:hover,
+   &__foto-2 img:hover,
+   &__foto-3 img:hover,
+   &__foto-4 img:hover {
+      transition: all 0.8s;
+      transform: scale(1.2);
+   }
+
+   &__foto-3,
+   &__foto-4 {
+      @media (max-width: 769px) {
+         margin-right: 0;
+      }
+   }
+
+   &__foto-2 {
+      @include animPositive-Y;
+      @media (max-width: 769px) {
+         margin-bottom: 20px;
+      }
+   }
+   &__foto-2._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+
+   &__foto-3 {
+      @include animPositive-Y;
+      @media (max-width: 415px) {
+         margin-right: 5px;
+      }
+   }
+   &__foto-3._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.6s;
+   }
+   &__foto-4 {
+      @include animPositive-Y;
+   }
+   &__foto-4._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.8s;
+   }
+
+   &__position {
+      margin-top: 16px;
+      text-align: center;
+   }
+}
+
+.container {
+   overflow-x: hidden;
+   @media (max-width: 1025px) {
+      text-align: center;
+   }
+}

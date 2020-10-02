@@ -1,0 +1,210 @@
+.contact {
+   color: $color-1;
+   padding-bottom: 73px;
+   &__wrapper {
+      font-family: "MyriadPro";
+      min-height: 684px;
+      display: flex;
+   }
+   #map {
+      width: 100%;
+   }
+   &__map {
+      max-width: 499px;
+      height: 684px;
+      @include animNegative-X;
+   }
+   &__map._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+   // ********************************
+   &__form {
+      max-width: 698px;
+      background-color: $formColor;
+      height: 684px;
+      padding: 52px 210px 0px 76px;
+      @include animPositive-X;
+   }
+   &__form._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+
+   &__title {
+      @include tlt;
+   }
+   &__title:first-letter {
+      @include fLeter;
+   }
+   &__title:after {
+      @include grayline;
+      width: 140px;
+      margin: -6px 0px -6px 0px;
+      margin-top: 3px;
+   }
+   // ********************************
+
+   &__block-text {
+      padding-bottom: 18px;
+   }
+   .name,
+   .mobile,
+   .email,
+   .area {
+      font-size: 16px;
+      background-color: $formColor;
+      border: 2px solid $color-10;
+      font-weight: 600;
+      color: $color-1;
+      padding-left: 15px;
+   }
+   .name,
+   .mobile,
+   .email {
+      height: 35px;
+   }
+
+   .name {
+      width: 412px;
+   }
+
+   input::placeholder,
+   textarea::placeholder {
+      color: $color-1;
+   }
+
+   // ****************************
+   &__block-comm {
+      padding-bottom: 12px;
+      max-width: 412px;
+      display: flex;
+   }
+   .mobile {
+      margin-right: 26px;
+   }
+
+   // *****************************
+
+   &__lock-mess {
+      padding-bottom: 22px;
+   }
+   .area {
+      width: 412px;
+      height: 76px;
+      padding-top: 11px;
+      resize: none;
+   }
+   // *****************************
+   .invalid {
+      border-color: tomato;
+   }
+   .btn {
+      background-color: $color-4;
+      color: $color-2;
+      padding: 11px 31px 10px 31px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 10px;
+   }
+   .btn:hover {
+      box-shadow: 0px 15px 25px -5px (darken($color-4, 40%));
+      transform: scale(1.03);
+   }
+   .btn:active {
+      box-shadow: 0px 4px 8px rgba($color-5, 30%);
+      transform: scale(0.98);
+   }
+   .contact__info {
+      padding-left: 22px;
+   }
+   .contact__tlt {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 36px;
+   }
+   .contact__inner {
+      display: flex;
+   }
+   .contact__item {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      margin-right: 24px;
+   }
+   .contact__valide {
+      visibility: hidden;
+      color: #4ef509;
+      margin-bottom: 32px;
+   }
+   .address {
+      margin-bottom: 28px;
+   }
+   .phone {
+      margin-bottom: 18px;
+   }
+   .contact__pers {
+      font-size: 12px;
+      text-align: left;
+      margin-bottom: 68px;
+   }
+   .pers-1 {
+      margin-top: 3px;
+   }
+   .pers-2 {
+      margin-top: 32px;
+   }
+   .pers-3 {
+      margin-top: 22px;
+   }
+
+   // **** Sosial *****
+
+   &__social:before {
+      @include grayline;
+      width: 412px;
+   }
+   &__social-block {
+      display: flex;
+      padding-top: 8px;
+      padding-left: 22px;
+   }
+
+   &__twitter,
+   &__linkedin,
+   &__facebook {
+      @include social;
+   }
+
+   &__twitter:hover,
+   &__linkedin:hover,
+   &__facebook:hover {
+      background-color: $color-5;
+      transform: scale(1.5);
+      transition: all 0.8s;
+   }
+
+   &__twitter:before,
+   &__linkedin:before,
+   &__facebook:before {
+      font-family: "icomoon";
+      color: $color-1;
+      color: $formColor;
+   }
+   &__twitter:before {
+      content: "\f099";
+   }
+   &__linkedin:before {
+      content: "\f08c";
+   }
+   &__facebook:before {
+      content: "\f09a";
+   }
+}
+.container {
+   overflow-x: hidden;
+}

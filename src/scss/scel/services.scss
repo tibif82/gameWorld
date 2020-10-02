@@ -1,0 +1,105 @@
+.services {
+   color: $color-1;
+   font-family: "MyriadPro";
+   .container {
+      text-align: center;
+      overflow-x: hidden;
+   }
+   &__wrapper {
+      background-image: url(../img/services/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 55px 150px 58px 50px;
+      display: flex;
+   }
+
+   // *********************
+   &__title {
+      @include tlt;
+      margin-right: 200px;
+      @include animPositive-Y;
+   }
+   // ***** animation *****
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.3s;
+   }
+   // *********************
+
+   &__title:first-letter {
+      @include fLeter;
+   }
+   &__title:after {
+      @include grayline;
+      margin: -6px 0px -6px 105px;
+      margin-top: 3px;
+   }
+   // **********************
+
+   &__info {
+      max-width: 541px;
+      margin-top: 85px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__block {
+      max-width: 225px;
+   }
+   // ***** animation *****
+   &__block:nth-child(1) {
+      @include animNegative-X;
+   }
+   &__block:nth-child(1)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.1s;
+   }
+   &__block:nth-child(2) {
+      @include animPositive-X;
+   }
+   &__block:nth-child(2)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+   &__block:nth-child(3) {
+      @include animNegative-X;
+   }
+   &__block:nth-child(3)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.3s;
+   }
+   &__block:nth-child(4) {
+      @include animPositive-X;
+   }
+   &__block:nth-child(4)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   // *******************
+
+   &__block:first-child {
+      padding-bottom: 75px;
+   }
+   &__block:first-child,
+   &__block:nth-child(3) {
+      margin-right: 91px;
+   }
+
+   &__subtitle {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 26px;
+   }
+
+   &__text {
+      font-size: 11px;
+      text-align: left;
+      letter-spacing: 0.5px;
+   }
+}

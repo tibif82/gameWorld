@@ -1,0 +1,192 @@
+.testimonials {
+   font-family: "MyriadPro";
+   color: $color-1;
+   padding: 55px 0 136px 0;
+
+   @media (max-width: 1025px) {
+      padding: 55px 0 55px 0;
+   }
+   @media (max-width: 376px) {
+      padding: 0;
+   }
+   @media (max-width: 415px) {
+      padding: 0;
+   }
+   @media (max-width: 321px) {
+      padding: 0;
+   }
+
+   .container {
+      overflow-x: hidden;
+      @media (max-width: 1025px) {
+         text-align: left;
+      }
+   }
+
+   &__wrapper {
+      display: flex;
+      background-color: $color-2;
+      padding: 55px 275px 136px 49px;
+      @media (max-width: 769px) {
+         padding: 40px 85px 40px 20px;
+      }
+      @media (max-width: 414px) {
+         display: inline-block;
+         padding: 0;
+         padding: 35px 0 35px 0;
+      }
+      @media (max-width: 376px) {
+         display: inline-block;
+         padding: 0;
+         padding: 29px 0 29px 0;
+      }
+      @media (max-width: 321px) {
+         padding: 35px 0 35px 0;
+      }
+   }
+
+   // ************************
+   &__title {
+      @include tlt;
+      padding-bottom: 84px;
+      @include animNegative-X;
+      @media (max-width: 1025px) {
+         margin-left: 114px;
+         font-size: 64px;
+         margin-bottom: -42px;
+      }
+      @media (max-width: 769px) {
+         font-size: 64px;
+         padding-bottom: 97px;
+      }
+      @media (max-width: 415px) {
+         font-size: 40px;
+         margin-left: 40px;
+      }
+      @media (max-width: 376px) {
+         font-size: 30px;
+         margin-left: 40px;
+      }
+      @media (max-width: 321px) {
+         margin-left: 20px;
+      }
+   }
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__title:first-letter {
+      @include fLeter;
+   }
+   &__title:after {
+      @include grayline;
+      width: 103px;
+      margin: -6px 0px -6px 57px;
+      margin-top: 5px;
+
+      @media (max-width: 1025px) {
+         margin: -6px 0px -6px 243px;
+         margin-top: 5px;
+      }
+      @media (max-width: 415px) {
+         margin: -6px 0px -6px 110px;
+         margin-top: 5px;
+      }
+      @media (max-width: 376px) {
+         margin: -6px 0px -6px 60px;
+         margin-top: 5px;
+      }
+   }
+   // ************************
+
+   &__descriptions {
+      max-width: 624px;
+      display: inline-block;
+      margin: 0 87px 0 42px;
+      @media (max-width: 1025px) {
+         font-size: 17px;
+         margin: 0 16px 0 118px;
+      }
+      @media (max-width: 769px) {
+         font-size: 15px;
+      }
+      @media (max-width: 415px) {
+         margin: 0 40px 0 40px;
+         font-size: 13px;
+      }
+      @media (max-width: 376px) {
+         margin: 0 40px 0 40px;
+         font-size: 13px;
+      }
+      @media (max-width: 321px) {
+         margin: 0 20px 0 20px;
+      }
+   }
+   &__bent {
+      @include pendent;
+      color: $color-1;
+      @include animPositive-Y;
+
+      @media (max-width: 1025px) {
+         font-size: 18px;
+      }
+      @media (max-width: 769px) {
+         font-size: 17px;
+      }
+      @media (max-width: 415px) {
+         font-size: 15px;
+      }
+      @media (max-width: 376px) {
+         font-size: 15px;
+      }
+      @media (max-width: 321px) {
+         font-size: 14px;
+      }
+   }
+   &__bent._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+
+   &__bent-txt {
+      @include animPositive-Y;
+   }
+   &__bent-txt._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+
+   &__foto {
+      text-align: center;
+      margin-top: 30px;
+      @include animNegative-Y;
+
+      @media (max-width: 769px) {
+         margin-top: 47px;
+      }
+   }
+   &__foto._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.5s;
+   }
+   &__img {
+      border-radius: 50%;
+      display: block;
+      border: 2px solid $color-5;
+      margin-bottom: 26px;
+
+      @media (max-width: 376px) {
+         display: inherit;
+      }
+      @media (max-width: 415px) {
+         display: inherit;
+      }
+   }
+   &__position {
+      font-size: 16px;
+   }
+}

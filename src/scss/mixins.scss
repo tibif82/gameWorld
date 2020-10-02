@@ -1,0 +1,65 @@
+@mixin grayline {
+   display: block;
+   content: "";
+   color: $color-10;
+   width: 123px;
+   height: 1px;
+   border: 1px solid;
+}
+
+@mixin image {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+@mixin pendent {
+   font-style: italic;
+   font-size: 16px;
+   color: $color-2;
+   margin-bottom: 11px;
+}
+
+@mixin tlt {
+   padding-bottom: 26px;
+   font-size: 30px;
+   font-weight: 600;
+   text-align: left;
+}
+
+@mixin fLeter {
+   color: $color-4;
+}
+
+@mixin social {
+   width: 19px;
+   height: 19px;
+   background-color: $color-1;
+   margin-right: 5px;
+   border-radius: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+// **** animation *****
+@mixin animPositive-X {
+   transform: translateX(25%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+}
+@mixin animPositive-Y {
+   transform: translateY(25%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+}
+@mixin animNegative-X {
+   transform: translateX(-25%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+}
+@mixin animNegative-Y {
+   transform: translateY(-25%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+}

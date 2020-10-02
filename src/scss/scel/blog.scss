@@ -1,0 +1,125 @@
+.blog {
+   font-family: "MyriadPro";
+   background-color: $color-1;
+   padding: 0px 0 115px 0;
+
+   &__wrapp {
+      display: flex;
+   }
+
+   // **************************
+   &__title {
+      @include tlt;
+      padding-bottom: 0;
+      margin-bottom: 50px;
+      margin-top: 60px;
+      @include animNegative-Y;
+   }
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__title:first-letter {
+      @include fLeter;
+   }
+   &__title:after {
+      @include grayline;
+      width: 84px;
+      margin: -6px 0px -6px 0px;
+      margin-top: 5px;
+   }
+   // **************************
+
+   &__nav {
+      font-size: 18px;
+      margin-left: 87px;
+      margin-right: 115px;
+   }
+   &__list {
+      @include animPositive-Y;
+   }
+   &__list._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+
+   // **************************
+   &__item {
+      color: $color-2;
+   }
+   &__item:hover {
+      color: $color-4;
+   }
+   &__url:not(:last-child) > &__item {
+      margin-bottom: 25px;
+   }
+   // **************************
+
+   &__right {
+      margin-top: 30px;
+   }
+   &__inner {
+      display: flex;
+   }
+
+   &__box:nth-child(1) {
+      @include animNegative-X;
+   }
+   &__box:nth-child(1)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+   &__box:nth-child(2) {
+      @include animPositive-Y;
+   }
+   &__box:nth-child(2)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__box:nth-child(3) {
+      @include animPositive-X;
+   }
+   &__box:nth-child(3)._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+
+   &__box:nth-child(2) {
+      padding: 0 110px 0 82px;
+   }
+
+   &__img {
+      padding-bottom: 10px;
+   }
+   &__date {
+      color: $color-4;
+      font-size: 18px;
+      padding-bottom: 30px;
+   }
+   &__subtitle {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 18px;
+   }
+   &__txt {
+      display: block;
+      width: 186px;
+      font-size: 12px;
+      font-style: italic;
+   }
+   // *****menu-burger*****
+   &__btn-menu {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+   }
+}
+.container {
+   overflow-x: hidden;
+   overflow-y: hidden;
+}

@@ -1,0 +1,52 @@
+@include font("MyriadPro", "MyriadPro-Bold", "700", "normal");
+@include font("MyriadPro", "MyriadPro-CondIt", "400", "normal");
+@include font("MyriadPro", "MyriadPro-Regular", "400", "normal");
+@include font("MyriadPro", "MyriadPro-Semibold", "400", "normal");
+
+@font-face {
+   font-family: "icomoon";
+   src: url("../fonts/icomoon.eot");
+   src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"),
+      url("../fonts/icomoon.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "icomoon" !important;
+   // speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin-square:before {
+   content: "\f08c";
+}
+.icon-twitter:before {
+   content: "\f099";
+}
+.icon-facebook:before {
+   content: "\f09a";
+}
+.icon-facebook-f:before {
+   content: "\f09a";
+}
+.icon-bars:before {
+   content: "\f0c9";
+}
+.icon-navicon:before {
+   content: "\f0c9";
+}
+.icon-reorder:before {
+   content: "\f0c9";
+}

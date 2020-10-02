@@ -1,0 +1,222 @@
+.about {
+   font-family: "MyriadPro";
+   background-color: $color-1;
+
+   &__wrapper {
+      padding-bottom: 111px;
+      @media (max-width: 321px) {
+         padding-bottom: 45px;
+      }
+   }
+
+   &__upper {
+      display: flex;
+      padding-bottom: 72px;
+      padding: 36px 25px 72px 133px;
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+         display: inline-block;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+         display: inline-block;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+         display: inline-block;
+         padding: 36px 30px 40px 30px;
+      }
+      @media (min-width: 320px) and (max-width: 575px) {
+         display: inline-block;
+         padding: 36px 25px 40px 25px;
+      }
+   }
+
+   &__title {
+      @include animPositive-Y;
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+         padding-bottom: 30px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+         padding-bottom: 30px;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+         padding-bottom: 30px;
+      }
+      @media (max-width: 575px) {
+         padding-bottom: 20px;
+      }
+   }
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.1s;
+   }
+
+   &__title span {
+      color: $color-8;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: left;
+   }
+
+   &__title h2 {
+      font-size: 80px;
+      text-align: left;
+      padding-right: 165px;
+      display: block;
+
+      @media (min-width: 320px) and (max-width: 512px) {
+         font-size: 74px;
+         padding-right: 0;
+      }
+   }
+
+   // ******************************
+
+   &__br {
+      display: flex;
+      align-items: center;
+
+      @include animPositive-Y;
+   }
+   &__br._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.2s;
+   }
+
+   &__line {
+      border: 1px solid $color-10;
+      width: 1px;
+      height: 100px;
+      margin-right: 20px;
+
+      @media (min-width: 320px) and (max-width: 440px) {
+         height: 200px;
+      }
+   }
+
+   &__title h2:first-letter {
+      color: $color-4;
+   }
+
+   &__title:after {
+      @include grayline;
+      margin: -6px 0px -6px 157px;
+
+      @media (min-width: 320px) and (max-width: 512px) {
+         margin: -6px 0px -6px 125px;
+      }
+   }
+
+   &__text {
+      color: $color-3;
+      position: relative;
+   }
+
+   &__text .sub-text {
+      font-size: 16px;
+      font-style: italic;
+      color: $color-2;
+      margin-bottom: 11px;
+   }
+
+   // ********************************
+   // ********************************
+   // ********************************
+   &__inner {
+      @media (min-width: 576px) and (max-width: 767px) {
+         display: flex;
+         justify-content: center;
+      }
+
+      @media (max-width: 575px) {
+         display: flex;
+         justify-content: center;
+      }
+   }
+   &__lower {
+      display: flex;
+      justify-content: space-around;
+
+      @media (min-width: 576px) and (max-width: 767px) {
+         display: inline-block;
+      }
+
+      @media (max-width: 575px) {
+         display: inline-block;
+      }
+   }
+
+   &__app,
+   &__game,
+   &__cont {
+      text-align: center;
+      @include animPositive-Y;
+
+      @media (min-width: 576px) and (max-width: 767px) {
+         margin-bottom: 20px;
+      }
+      @media (max-width: 575px) {
+         margin-bottom: 20px;
+      }
+   }
+   &__app._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.3s;
+   }
+   &__game._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__cont._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.5s;
+   }
+
+   &__ico {
+      margin: 0 auto;
+      background-color: $color-7;
+      display: inline-block;
+      width: 57px;
+      height: 57px;
+      border: 2px solid $color-5;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      cursor: pointer;
+   }
+   &__ico:hover {
+      box-shadow: 0px 0px 12px 0px #ffa800;
+   }
+
+   &__subtitle {
+      font-size: 18px;
+      margin-bottom: 19px;
+   }
+   &__txt {
+      max-width: 239px;
+      min-height: 82px;
+      font-size: 10px;
+      font-style: italic;
+
+      @media (min-width: 576px) and (max-width: 767px) {
+         max-width: 400px;
+         font-size: 14px;
+      }
+
+      @media (min-width: 320px) and (max-width: 575px) {
+         max-width: 400px;
+         font-size: 14px;
+         padding: 0 15px 0 15px;
+      }
+   }
+   &__txt p {
+      margin-bottom: 17px;
+   }
+}

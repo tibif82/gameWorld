@@ -1,0 +1,72 @@
+.work {
+   background-color: $color-1;
+   font-family: "MyriadPro";
+   padding-bottom: 66px;
+
+   &__top {
+      margin-left: 81px;
+      @include animPositive-Y;
+   }
+   &__top._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.1s;
+   }
+   &__title {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 23px;
+   }
+   &__title:after {
+      @include grayline;
+      margin: -6px 0px -6px 103px;
+      margin-top: 3px;
+   }
+
+   &__title:first-letter {
+      color: $color-4;
+   }
+   &__menu {
+      margin-bottom: 26px;
+   }
+   &__list {
+      display: flex;
+   }
+
+   &__item:nth-child(3) {
+      margin-left: 15px;
+   }
+   &__item:last-child {
+      margin-left: 15px;
+   }
+
+   &__item:nth-child(2) {
+      margin-left: 35px;
+   }
+   &__url {
+      color: $color-9;
+      font-size: 9px;
+      padding-bottom: 3px;
+   }
+   &__url:hover {
+      box-shadow: 0px 4px 0px -3px rgba(255, 198, 0, 1);
+   }
+
+   &__bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   &__img {
+      @include image;
+   }
+   &__img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: all 0.8s;
+   }
+}
+.container {
+   overflow-x: hidden;
+}

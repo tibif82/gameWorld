@@ -1,0 +1,162 @@
+.layet {
+   color: $color-1;
+   font-family: "MyriadPro";
+   &__wrapp {
+      background-image: url(../img/layet/bg-layet.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+   }
+   &__inner {
+      max-width: 321px;
+      padding: 122px 97px 45px 26px;
+   }
+   &__title {
+      font-size: 60px;
+      font-weight: bold;
+      letter-spacing: -3px;
+      text-align: center;
+      padding-bottom: 57px;
+      @include animNegative-Y;
+   }
+   &__title._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__title:first-letter {
+      @include fLeter;
+   }
+
+   // **** Navigation ****
+   &__nav {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 2.25;
+      text-transform: uppercase;
+      color: $color-1;
+      display: inline-block;
+   }
+   &__list {
+      margin-bottom: 45px;
+   }
+   &__item {
+      color: $color-1;
+      @include animNegative-X;
+   }
+   &__item._active:nth-child(1) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__item._active:nth-child(2) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.8s;
+   }
+   &__item._active:nth-child(3) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 1.2s;
+   }
+   &__item._active:nth-child(4) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 1.6s;
+   }
+   &__item._active:nth-child(5) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 2s;
+   }
+   &__item._active:nth-child(6) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 2.4s;
+   }
+   &__item._active:nth-child(7) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 2.8s;
+   }
+   &__item._active:nth-child(8) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 3.2s;
+   }
+   &__item._active:nth-child(9) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 3.6s;
+   }
+
+   &__item:hover {
+      color: $color-4;
+   }
+   // *********************
+
+   &__social:before {
+      @include grayline;
+      width: 115px;
+      color: $color-4;
+   }
+   &__social-block {
+      display: flex;
+      padding-top: 8px;
+      @include animPositive-Y;
+   }
+   &__social-block._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+   }
+   &__twitter,
+   &__linkedin,
+   &__facebook {
+      @include social;
+   }
+
+   &__twitter:hover,
+   &__linkedin:hover,
+   &__facebook:hover {
+      background-color: $color-5;
+      transform: scale(1.5);
+      transition: all 0.8s;
+   }
+
+   &__twitter:before,
+   &__linkedin:before,
+   &__facebook:before {
+      font-family: "icomoon";
+      color: $color-2;
+   }
+   &__twitter:before {
+      content: "\f099";
+   }
+   &__linkedin:before {
+      content: "\f08c";
+   }
+   &__facebook:before {
+      content: "\f09a";
+   }
+
+   // **** Subtitle ****
+
+   .layet__section {
+      padding: 345px 84px 144px 25px;
+   }
+   &__subtitle {
+      font-size: 111px;
+      font-weight: bold;
+      line-height: 0.8;
+      letter-spacing: -5.55px;
+      text-align: left;
+   }
+   &__subtitle-yellow {
+      color: $color-4;
+   }
+}
+.container {
+   overflow-x: hidden;
+}
